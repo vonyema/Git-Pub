@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitPub</title>
+</head>
+<body>
+    <h1>Welcome to GitPub</h1>
+    <h3>Dinner Menu</h3>
+    <ul>
+        <% for (let i=0; i <allFoods.length; i++) { %>
+            <li>
+                <a href="/food/<%=i%>"><%=allFoods[i].name%></a>
+            </li>
+            <% } %>
+    </ul>
+    <a href="/drinks">Drinks Menu</a> 
+    <style type="text/css">
+       body{
+        background: rgb(92, 134, 233);
+        color: black;
+       } 
+       li::first-letter {
+    text-transform:capitalize;
+}
+    </style>
+</body>
+</html>
